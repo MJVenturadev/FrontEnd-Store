@@ -236,6 +236,16 @@ h3 { font-size: 2.4rem; }
     gap: 1rem;
     
 }
+@media (max-width: 610px) {
+    .formulario {
+        grid-template-columns: repeat(3);
+    }
+}
+@media (max-width: 610px) {
+    .formulario__campo  {
+        grid-column: 1 / 3;
+    }
+}
 
 .formulario__campo {
    border: 1rem ridge var(--color);  /** border-width - border-style - border-color **/
@@ -254,13 +264,7 @@ h3 { font-size: 2.4rem; }
     grid-column: 1 / 3;
 }
 
-@media (max-width: 610px) {
-    .formulario__campo,
-    .formulario__submit {
-        font-size: smaller;
-        padding: 0.5rem;
-    }
-}
+
 .formulario__submit:hover {
     font-size: 2.4rem;
     cursor: pointer;
