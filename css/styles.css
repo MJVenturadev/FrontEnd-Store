@@ -253,6 +253,14 @@ h3 { font-size: 2.4rem; }
     transition: font-size .3s ease;
     grid-column: 1 / 3;
 }
+
+@media (max-width: 610px) {
+    .formulario__campo,
+    .formulario__submit {
+        font-size: smaller;
+        padding: 0.5rem;
+    }
+}
 .formulario__submit:hover {
     font-size: 2.4rem;
     cursor: pointer;
